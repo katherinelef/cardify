@@ -1,0 +1,26 @@
+{
+  "name": "cardify",
+  "version": "1.0.0",
+  "description": "\"Creación de un plugin con jquery para las imágenes\"",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/betsy18/cardify.git"
+  },
+  "keywords": [
+    "babel"
+  ],
+  "author": "Betsy Lara y Katherine Levano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/betsy18/cardify/issues"
+  },
+  "homepage": "https://github.com/betsy18/cardify#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
