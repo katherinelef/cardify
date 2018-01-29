@@ -10,7 +10,7 @@ con el texto del atributo `alt` de la imagen.
 
 ## Flujo de trabajo
 
-+ Planeación de trabajo con Trello [trello](https://trello.com/b/bYxjDYth)
++ Planeación de trabajo con [Trello](https://trello.com/b/bYxjDYth)
 
 ## Instalación
 
@@ -53,7 +53,27 @@ $(container).cardify({});
 
 ## Snippets
 
-+ html-container
++ html
+```html
+ <div class="container">
+    <img src="" alt="">
+  </div>
+```
+
++ js
+```js
+(function($) {
+  $.fn.showAltHover = function() {
+    $('img').hover(
+      function() {
+        $(this).css('display', 'none');
+        $('figure').append($(this));
+        $('figure').append($('<img class="img-responsive">'));
+        $('figure').append($('<figcaption>').attr('alt'));
+      });
+  };
+}(jQuery));
+```
 
 ## Herramientas
 
