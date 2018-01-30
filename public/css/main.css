@@ -1,9 +1,6 @@
 .hover {
-  width: 30%;
-  height: 30%;
   opacity: 0.5;
   position: relative;
-
 
 }
 
@@ -11,6 +8,9 @@
   font-family: fantasy;
   font-size: 30px;
   margin-top: 10px;
-  transform: translate(12%,-500%);
   margin-bottom: 100px;
+}
+
+.inline {
+  display: inline-block;
 }

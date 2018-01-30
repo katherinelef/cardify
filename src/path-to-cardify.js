@@ -1,20 +1,23 @@
 (function($) {
   $.fn.showAltHover = function() {
-    $('img').mouseover(
-      function() {
-        var image = $(this)
-      $(this).each(function() {
-        $(this).replaceWith('<figure>' + '<img  src=' + $(this).attr('src') + ' class=hover' + '>' + '<figcaption class=letter text-center>' + $(this).attr('alt') + '</figcaption>' + '</figure>');
-      });
+    $('img').hover(
+       function() {
+         var image = $(this)
+       $(this).each(function() {
+         if ( image.parent().is("figure")) {
+           $( "figcaption" ).remove()
+           image.unwrap();
+           image.removeClass('hover')
 
-      $('figure').mouseout(
-        function() {
-          console.log("hola")
-          $(this).each(function() {
-        $(this).replaceWith('<img src=' + image.attr('src') +' alt='+ image.attr('alt') +'>')
-});
-      });
-    });
+         } else {
+           image.wrap( "<figure class=inline></figure>" );
+           $("figure").append('<figcaption class=letter>' + $(this).attr('alt') + '</figcaption>')
+           image.addClass('hover')
+
+         }
+         //$(this).replaceWith('<figure>' + '<img  src=' + $(this).attr('src') + ' class=hover' + '>' + '<figcaption class=letter text-center>' + $(this).attr('alt') + '</figcaption>' + '</figure>');//
+       })
+     });
 
   };
 }(jQuery));
