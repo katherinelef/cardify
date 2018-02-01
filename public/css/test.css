@@ -8,20 +8,16 @@
   font-size: 30px;
   transform: translate(40%,-200%);
   position: absolute;
-
-
   }
 
 .inline {
   display: inline-block;
   margin: 0;
-
 }
 
 img {
   border-radius: 10px;
   margin: 10px;
-
 }
 
 h1 {
