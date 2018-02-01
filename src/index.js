@@ -1,4 +1,4 @@
-
+// con la funcion primera se encapsula de forma global
 (function($) {
   $.fn.cardify = function() {
     $('img').hover(
