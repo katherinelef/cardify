@@ -38,12 +38,13 @@ $('.container').cardify({});
 ## Ejemplos
 
 ```html
- <div class="container">
-    <img src="assets/images/bembos.jpg" alt="bembos">
-    <img src="assets/images/casamama.jpg" alt="casamama">
-    <img src="assets/images/chenzu.jpg" alt="chenzu">
-    <img src="assets/images/tanta.png" alt="tanta">
-    <img src="assets/images/vegetales.jpg" alt="vegetales">
+  <div class="container">
+      <img src="assets/images/perro1.jpg" alt="Cachorro1">
+      <img src="assets/images/perro2.jpg" alt="Cachorro2">
+      <img src="assets/images/perro3.jpg" alt="Cachorro3">
+      <img src="assets/images/perro4.jpg" alt="Cachorro4">
+      <img src="assets/images/perro5.jpg" alt="Cachorro5">
+      <img src="assets/images/perro6.jpg" alt="Cachorro6">
   </div>
 ```
 
