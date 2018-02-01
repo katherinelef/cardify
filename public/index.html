@@ -1,25 +1,141 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Cardify</title>
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
+<html lang="en">
 
-    <h1>Mis cachorros favoritos</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- CDN materialize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <!-- iconos -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Cardify</title>
 
-    <div class="container">
-      <img src="assets/images/perro1.jpg" alt="Cachorro1">
-      <img src="assets/images/perro2.jpg" alt="Cachorro2">
-      <img src="assets/images/perro3.jpg" alt="Cachorro3">
-      <img src="assets/images/perro4.jpg" alt="Cachorro4">
-      <img src="assets/images/perro5.jpg" alt="Cachorro5">
-      <img src="assets/images/perro6.jpg" alt="Cachorro6">
+</head>
+
+<body class="indigo lighten-5">
+  <!-- header -->
+  <header>
+    <nav class="indigo lighten-1">
+      <div class="nav-wrapper">
+        <div class="container">
+          <a href="" class="brand-logo">Cardify</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="../public/views/test.html" target="_blank">Test</a>
+            </li>
+            <li>
+              <a href="https://github.com/betsy18/cardify">Github</a>
+            </li>
+          </ul>
+          <ul class="side-nav col s4" id="mobile-demo">
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="../public/views/test.html" target="_blank">Test</a>
+            </li>
+            <li>
+              <a href="https://github.com/betsy18/cardify">Github</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- main -->
+  <main>
+    <div class="container center">
+      <div class="row">
+        <div class="col s12 m6 offset-m3">
+          <div class="card indigo lighten-5">
+            <br>
+            <figure>
+              <img src="assets/images/perro8.jpg">
+            </figure>
+            <div class="card-content">
+              <p></p>
+            </div>
+            <div class="card-action">
+              <a href="../public/views/test.html" target="_blank">Ver Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </main>
 
-    <!-- CDN de jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="../src/path-to-cardify.js"></script>
-  </body>
+  <section class="section-info">
+    <br>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="center promo promo-example">
+            <i class="material-icons">local_library</i>
+            <p class="promo-caption">Utilidad</p>
+            <p class="light center">Cardify es una librería implementada en jquery que tiene como finalidad mostrar el nombre de las imágenes con
+              el estilo hover.</p>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="center promo promo-example">
+            <i class="material-icons">settings</i>
+            <p class="promo-caption">Escalabilidad</p>
+            <p class="light center">Al ser un código muy útil y simple posee escalabilidad, ya que lo puede editar el usuario de acuerdo a sus necesidades</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section implementation-->
+  <section class="section-implementation">
+    <div class="container">
+      <hr>
+      <br>
+      <div class="row">
+        <h6>Implementación
+          <i class="material-icons">build</i>
+        </h6>
+        <ol>
+          <li>Enlazar las librerías de js mediante la etiqueta script al html</li>
+          <figure>
+            <img src="assets/images/html.png" alt="html" class="responsive-img">
+          </figure>
+          <li>En el contenedor de las imágenes colocar una clase llamada container</li>
+          <li>Todas las imágenes deben de tener su atributo alt</li>
+          <li>Por último, llamar al plugin en el archivo js</li>
+          <figure>
+            <img src="assets/images/js.png" alt="js" class="responsive-img">
+          </figure>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="page-footer indigo lighten-1">
+    <div class="footer-copyright">
+      <div class="container center">
+        © 2018 Copyright Cardify
+      </div>
+    </div>
+  </footer>
+
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- materialize.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <!-- js -->
+  <!-- <script src="js/app.js"></script> -->
+</body>
+
 </html>

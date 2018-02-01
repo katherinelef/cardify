@@ -24,7 +24,7 @@ con el texto del atributo `alt` de la imagen.
 
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="path-to-cardify.js"></script>
+<script src="index.js"></script>
 ```
 
 ## Uso

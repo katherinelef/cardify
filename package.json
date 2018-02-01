@@ -4,7 +4,7 @@
   "description": "\"Creación de un plugin con jquery para las imágenes\"",
   "main": "index.js",
   "scripts": {
-    "build": "babel src -d public/js"
+    "build": "babel src -d public"
   },
   "repository": {
     "type": "git",
