@@ -1,6 +1,6 @@
 // con la funcion primera se encapsula de forma global
 (function($) {
-  $.fn.cardify = function() {
+  $.fn.cardify = function(options) {
     $('img').hover(
       function() {
         let image = $(this);
@@ -17,6 +17,17 @@
           }
         });
       });
+      let settings = $.extend({
+       color: 'black',
+       fontFamily: 'fantasy'
+
+    }, options );
+
+  return this.css({
+      color: settings.color,
+      fontFamily: settings.fontFamily,
+  })
+
   };
 }(jQuery));
 // el signo de dolar sirve para encapsular
