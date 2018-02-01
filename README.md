@@ -17,7 +17,7 @@ con el texto del atributo `alt` de la imagen.
 1. Se descargará un raw con los archivos del plugin.
 2. Se agregarán los archivos en la carpeta _vendors_
 3. Se llamarán a la librería mediante un `<script>`
-4. Por último se llamará a la librería mediante la función `$(container).cardify({});`
+4. Por último se llamará a la librería mediante la función `$('.container').cardify({});`
 
 
 ### Global (navegador)
@@ -32,7 +32,7 @@ con el texto del atributo `alt` de la imagen.
 ```js
 // `container` es el selector del contenedor donde se buscarán todas las
 // imágenes a ser procesadas.
-$(container).cardify({});
+$('.container').cardify({});
 ```
 
 ## Ejemplos
@@ -48,7 +48,7 @@ $(container).cardify({});
 ```
 
 ```js
-$(container).cardify({});
+$('.container').cardify({});
 ```
 
 ## Snippets
@@ -63,16 +63,28 @@ $(container).cardify({});
 + js
 ```js
 (function($) {
-  $.fn.showAltHover = function() {
+  $.fn.cardify = function() {
     $('img').hover(
-      function() {
-        $(this).css('display', 'none');
-        $('figure').append($(this));
-        $('figure').append($('<img class="img-responsive">'));
-        $('figure').append($('<figcaption>').attr('alt'));
-      });
+       function() {
+         var image = $(this)
+       $(this).each(function() {
+         if ( image.parent().is("figure")) {
+           $( "figcaption" ).remove()
+           image.unwrap();
+           image.removeClass('hover')
+
+         } else {
+           image.wrap( "<figure class=inline></figure>" );
+           $("figure").append('<figcaption class=letter>' + $(this).attr('alt') + '</figcaption>')
+           image.addClass('hover')
+
+         }
+       })
+     });
+
   };
 }(jQuery));
+
 ```
 
 ## Herramientas
@@ -83,8 +95,6 @@ $(container).cardify({});
 + Node.js
 + Npm
 + Babel
-+ Bootstrap, por el momento de las pruebas
-
 
 ## Bibliografía
 + [Babel](https://platzi.com/blog/que-es-babel/)
