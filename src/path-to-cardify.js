@@ -17,17 +17,16 @@
           }
         });
       });
-      let settings = $.extend({
-       color: 'black',
-       fontFamily: 'fantasy'
+    let settings = $.extend({
+      color: 'black',
+      fontFamily: 'fantasy'
 
-    }, options );
+    }, options);
 
-  return this.css({
+    return this.css({
       color: settings.color,
       fontFamily: settings.fontFamily,
-  })
-
+    });
   };
 }(jQuery));
 // el signo de dolar sirve para encapsular
