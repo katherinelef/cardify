@@ -6,7 +6,7 @@ Cardify es un plugin que te permite hacer un efecto hover a tu imágenes y migra
 
 ## Vista previa 
 
-![readme-img](https://user-images.githubusercontent.com/32281880/37983582-7409c326-31b9-11e8-8ee6-74da6a173d0a.png)
+![readme-img](https://user-images.githubusercontent.com/32281880/37983744-e65c79a0-31b9-11e8-9a74-93c5fb14498c.png)
 
 
 ## Desarrollado para
